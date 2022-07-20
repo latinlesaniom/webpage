@@ -1,0 +1,189 @@
+:root{
+    --light-purple: #a3a3ff;
+    --pink: #F25CD9;
+    --gray: #7c7c7c;
+    --light-blue: #575373;
+    --dark-blue: #2B2B40;
+    --inputs-colors: #2a2a35;
+    --black: #17171f;
+    --darkness: #3f3f51;
+    --purple: #3f3fff;
+    --paragraph-text: #9191a4;
+    --white: #f7f8fa;
+    --font-size: 1.5rem;
+    --Poopins: 'Poppins', sans-serif;
+    --roboto: Roboto, sans-serif;
+}
+
+#hire-me{
+    margin-top: 12rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#hire-me .principal-text{
+    width: 75%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#hire-me .principal-text h2{
+    font-family: var(--Poopins);
+    font-size: 30px;
+}
+
+#hire-me .principal-text p{
+    font-family: var(--Poopins);
+    font-size: 16px;
+    margin-top: 1.5rem;
+    color: var(--paragraph-text);
+}
+
+#hire-me .Name{
+    width: 40%;
+    display: grid;
+    margin-bottom: 1.5rem;
+}
+
+
+#hire-me .Name label{
+    display: grid;
+    margin-bottom: 1.5rem;
+}
+
+#hire-me .Name input{
+    background-color: var(--inputs-colors);
+    width: 100%;
+    border: 0ch;
+    padding: 1rem;
+    color: var(--white);
+    font-family: var(--Poopins);
+    font-size: 16px;
+    height: 100%;
+}
+
+#hire-me .Email{
+    width: 40%;
+    display: grid;
+    margin-bottom: 1.5rem;
+}
+
+#hire-me .Email input{
+    background-color: var(--inputs-colors);
+    border: 0ch;
+    padding: 1rem;
+    color: var(--white);
+    font-family: var(--Poopins);
+    font-size: 16px;
+}
+
+#hire-me .Email label{
+    width: 40%;
+    display: grid;
+    margin-bottom: 1.5rem;
+}
+
+#hire-me .Message{
+    width: 40%;
+    display: grid;
+    margin-bottom: 1.5rem;
+    height: 80%;
+}
+
+#hire-me .Message textarea{
+    background-color: var(--inputs-colors);
+    border: 0ch;
+    padding: 1rem;
+    color: var(--white);
+    font-family: var(--Poopins);
+    font-size: 16px;
+    height: 200px;
+}
+
+#hire-me .Message label{
+    display: grid;
+    margin-bottom: 1.5rem;
+}
+
+#hire-me .contact{
+    display: grid;
+    padding-left: 14rem;
+    width: 100%;
+}
+
+#hire-me .contact .btn{
+    background-color: var(--purple);
+    color: var(--white);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-decoration: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: fit-content;
+    font-family: var(--Poopins);
+    font-size: 16px;
+    font: bolder;
+}
+
+#hire-me .contact-icons{
+    width: 30%;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--paragraph-text);
+    font-size: 16px;
+    padding-top: 2rem;
+}
+
+#hire-me .contact-icons a{
+    text-decoration: none;
+    color: var(--paragraph-text);
+}
+
+#hire-me .contact-icons .icons-png{
+    margin-top: 5rem;
+}
+
+
+@media (min-width: 650px){
+    #hire-me{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    #hire-me .principal-text{
+        grid-column: 1/6;
+    }
+
+    #hire-me .contact{
+        grid-column: 1/7;
+        grid-row: 2/5;
+    }
+
+    #hire-me .contact .Name{
+        grid-column: 1/5;
+        grid-row: 1/1;
+    }
+
+    #hire-me .contact .Email{
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+    #hire-me .Message{
+        grid-column: 1/5;
+        grid-row: 3/7;
+    }
+
+    #hire-me .btn{
+        grid-column: 1/5;
+    }
+
+    #hire-me .contact-icons{
+        grid-column: 2/5;
+        grid-row: 1/3;
+    }
+}
+
